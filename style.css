@@ -1,0 +1,14 @@
+.hide{
+    display:none !important;
+}
+.dropdown-menu li span.glyphicon{
+    margin-left:10px;
+}
+.dropdown-menu{
+    height: auto;
+    max-height: 100px;
+    overflow-x: hidden;
+}
+.dropdown-menu li{
+    cursor: pointer;
+}
