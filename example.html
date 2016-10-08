@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Custom bootstrap dropdown</title>
+  <base target="_self">
+  <meta name="description" content="Custom bootstrap dropdown" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" value="notranslate">
+ 
+  
+  <!--stylesheets / link tags loaded here-->
+
+
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+  
+</head>
+<body >
+  <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" data-name="Property type" default-text="Search By">Property type
+  <span class="caret"></span></button>
+  <ul id="property-type" class="dropdown-menu multi-select">
+    <li>All property types<input type="checkbox" class="hide" name="type[]" value="" data-name><span class='glyphicon'></span></li>
+    <li>Apartment<input type="checkbox" class="hide" name="type[]" value="Apartment" checked><span class='glyphicon'></span></li>
+    <li>Unit<input type="checkbox" class="hide" name="type[]" value="Unit"><span class='glyphicon'></span></li>
+    <li>House<input type="checkbox" class="hide" name="type[]" value="House"><span class='glyphicon'></span></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" data-name="Region">Region
+  <span class="caret"></span></button>
+  <ul  class="dropdown-menu single-select">
+    <li>All Regions<input type="radio" class="hide" name="region" value="all"></li>
+    <li>Auckland<input type="radio" class="hide" name="region" value="Auckland"></li>
+    <li>Nelson<input type="radio" class="hide" name="region" value="Nelson"></li>
+    <li>Hastings<input type="radio" class="hide" name="region" value="Hastings"></li>
+  </ul>
+</div>
+  <!--scripts loaded here-->
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
